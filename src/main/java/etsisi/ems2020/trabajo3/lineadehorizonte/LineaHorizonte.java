@@ -53,7 +53,7 @@ public class LineaHorizonte {
       mediante la t�cnica de divide y vencer�s.
      */
     
-    public void guardaLineaHorizonte (String fichero, Punto p, FileWriter fileWriter, PrintWriter out, int i)
+	public void guardaLineaHorizonte(String fichero, Punto p, FileWriter fileWriter, PrintWriter out, int i)
     {
         try
         {
