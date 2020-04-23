@@ -84,7 +84,7 @@ public class Ciudad {
 			LineaHorizonte s1 = this.crearLineaHorizonte(pi, medio);
 			LineaHorizonte s2 = this.crearLineaHorizonte(medio + 1, pd);
 			Punto a = null, b = null, aux = null;
-			linea = LineaHorizonteFussion(s1, s2, a, b, aux);
+			linea = lineaHorizonteFussion(s1, s2, a, b, aux);
 		}
 		return linea;
 	}
@@ -96,7 +96,7 @@ public class Ciudad {
 	 * solucionar dichos problemas para que el LineaHorizonte calculado sea el
 	 * correcto.
 	 */
-	public LineaHorizonte LineaHorizonteFussion(LineaHorizonte s1, LineaHorizonte s2, Punto p1, Punto p2, Punto paux) {
+	public LineaHorizonte lineaHorizonteFussion(LineaHorizonte s1, LineaHorizonte s2, Punto p1, Punto p2, Punto paux) {
 		// en estas variables guardaremos las alturas de los puntos anteriores, en s1y
 		// la del s1, en s2y la del s2
 		// y en prev guardaremos la previa del segmento anterior introducido
@@ -217,8 +217,8 @@ public class Ciudad {
 				xd = sr.nextInt();
 				y = sr.nextInt();
 
-				Edificio Salida = new Edificio(xi, y, xd);
-				this.addEdificio(Salida);
+				Edificio salida = new Edificio(xi, y, xd);
+				this.addEdificio(salida);
 			}
 		} catch (Exception e) {
 		}
